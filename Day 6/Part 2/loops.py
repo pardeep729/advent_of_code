@@ -1,4 +1,5 @@
-import copy
+# FIXME: Rework this with numpy, see if helps
+# import numpy as np
 
 guard_directions_order = ['^', '>', 'v', '<']
 
