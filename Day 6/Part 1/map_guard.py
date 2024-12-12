@@ -82,18 +82,17 @@ def calculate_new_map(lab_map):
     # Generate new lab_map (string)
     new_lab_map = '\n'.join([''.join(r) for r in lab_map_grid])
 
-    # Count the 'X's
-    return new_lab_map.count('X')
+    return new_lab_map
 
 # Example
 with open('../example_map.txt', 'r') as f:
     lab_map = f.read()
 
-print(calculate_new_map(lab_map))
+print(calculate_new_map(lab_map).count('X'))
 
 # Actual Input
 with open('../input_map.txt', 'r') as f:
     lab_map = f.read()
 
-print(calculate_new_map(lab_map))
+print(calculate_new_map(lab_map).count('X'))
 
